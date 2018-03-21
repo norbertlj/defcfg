@@ -47,13 +47,16 @@ if &diff
   colorscheme diffcolors
 endif
 
-" Synastic configuration
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_yaml_checkers = ['yamllint']
-let g:syntastic_yaml_yamllint_args = '-d "rules: {line-length:{allow-non-breakable-words: true, max: 120,allow-non-breakable-inline-mappings: true}}"'
+" Fugitive status line to show current branch name
+set statusline+=%{fugitive#statusline()}
+
+" Synastic configuration removed and switched to ale
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_yaml_checkers = ['yamllint']
+" let g:syntastic_yaml_yamllint_args = '-d "rules: {line-length:{allow-non-breakable-words: true, max: 120,allow-non-breakable-inline-mappings: true}}"'
