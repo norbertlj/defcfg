@@ -24,6 +24,8 @@ set nocompatible
 "File type plugin recognize files using extension
 filetype plugin on
 
+" Pathogen and Vundle is not needed in vim 8
+" execute pathogen#infect()
 syntax on
 
 "Nerdtree
@@ -60,3 +62,11 @@ set statusline+=%{fugitive#statusline()}
 " let g:syntastic_check_on_wq = 0
 " let g:syntastic_yaml_checkers = ['yamllint']
 " let g:syntastic_yaml_yamllint_args = '-d "rules: {line-length:{allow-non-breakable-words: true, max: 120,allow-non-breakable-inline-mappings: true}}"'
+
+" Setting filetypes
+" Set the type for the file type and override if file type
+" already has detected
+au BufRead,BufNewFile *.pp set filetype=puppet
+" Set the type for the file type but do NOT override if file type
+" already has detected
+" au BufRead,BufNewFile *.html.twig setfiletype=html
