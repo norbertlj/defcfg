@@ -18,6 +18,10 @@ set shiftwidth=2
 set autoindent
 set smartindent
 
+" Set relative number and assign it to ctrl + m for toggle
+set relativenumber
+map <C-m> :set relativenumber!<CR>
+
 "Needed for a lot of cool stuff and plugins
 set nocompatible
 
