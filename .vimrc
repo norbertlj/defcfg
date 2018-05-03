@@ -39,8 +39,8 @@ let g:NERDTreeDirArrowExpandable='+'
 let g:NERDTreeDirArrowCollapsible='.'
 
 " Vim Wiki configuration
-" Setting up home directory
-let g:vimwiki_list = [{'path': "$VIMWIKIHOME"}]
+" Setting up home directory and markdown as default VimWiki language
+let g:vimwiki_list = [{'path': "$VIMWIKIHOME", 'syntax': 'markdown', 'ext': '.md'}]
 " Highlight headers with different colors
 let g:vimwiki_hl_headers = 1
 " Highlight completed tasks
