@@ -19,8 +19,9 @@ set autoindent
 set smartindent
 
 " Set relative number and assign it to ctrl + m for toggle
-set relativenumber
-map <C-m> :set relativenumber!<CR>
+"set relativenumber
+"set nu
+"map <C-m> :set nu!<CR>
 
 "Needed for a lot of cool stuff and plugins
 set nocompatible
@@ -55,6 +56,7 @@ endif
 
 " Fugitive status line to show current branch name
 set statusline+=%{fugitive#statusline()}
+let g:ale_puppet_puppetlint_options='--no-variable_scope-check --no-autoloader_layout-check'
 
 " Synastic configuration removed and switched to ale
 " set statusline+=%#warningmsg#
