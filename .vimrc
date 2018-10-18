@@ -50,6 +50,7 @@ let g:vimwiki_hl_cb_checked = 1
 "let g:vimwiki_url_maxsave=0
 
 " Loads specific color scheme for vimdiff
+colorscheme ron
 if &diff
   colorscheme diffcolors
 endif
@@ -57,17 +58,14 @@ endif
 " Fugitive status line to show current branch name
 set statusline+=%{fugitive#statusline()}
 let g:ale_puppet_puppetlint_options='--no-variable_scope-check --no-autoloader_layout-check'
+let g:ale_yaml_yamllint_options='-d "{extends: relaxed, rules: {line-length: disable}}"'
 
-" Synastic configuration removed and switched to ale
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 0
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_yaml_checkers = ['yamllint']
-" let g:syntastic_yaml_yamllint_args = '-d "rules: {line-length:{allow-non-breakable-words: true, max: 120,allow-non-breakable-inline-mappings: true}}"'
+" Indentions
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+map <C-l> :IndentGuidesToggle<CR>
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=8
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=17
 
 " Setting filetypes
 " Set the type for the file type and override if file type
