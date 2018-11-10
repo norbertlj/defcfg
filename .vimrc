@@ -33,6 +33,9 @@ filetype plugin on
 " execute pathogen#infect()
 syntax on
 
+"Set interactive search
+set incsearch
+
 "Nerdtree
 "Ctrl n to open/close nerdtree
 map <C-n> :NERDTreeToggle<CR>
