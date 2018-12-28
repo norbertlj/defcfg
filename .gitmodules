@@ -16,3 +16,6 @@
 [submodule ".vim/pack/plugins/start/vim-markdown-toc"]
 	path = .vim/pack/plugins/start/vim-markdown-toc
 	url = ssh://git@github.com/mzlogin/vim-markdown-toc.git
+[submodule ".vim/pack/plugins/start/vim-markdown"]
+	path = .vim/pack/plugins/start/vim-markdown
+	url = ssh://git@github.com/plasticboy/vim-markdown.git
