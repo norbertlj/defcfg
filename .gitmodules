@@ -13,3 +13,6 @@
 [submodule ".vim/pack/plugins/start/vim-indent-guides"]
 	path = .vim/pack/plugins/start/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule ".vim/pack/plugins/start/vim-markdown-toc"]
+	path = .vim/pack/plugins/start/vim-markdown-toc
+	url = ssh://git@github.com/mzlogin/vim-markdown-toc.git
