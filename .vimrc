@@ -30,7 +30,7 @@ set nocompatible
 filetype plugin on
 
 " Pathogen and Vundle is not needed in vim 8
-" execute pathogen#infect()
+execute pathogen#infect()
 syntax on
 
 "Set interactive search
@@ -58,6 +58,8 @@ if &diff
   colorscheme diffcolors
 endif
 
+"set shellcmdflag=-lc
+
 " Fugitive status line to show current branch name
 set statusline+=%{fugitive#statusline()}
 let g:ale_puppet_puppetlint_options='--no-variable_scope-check --no-autoloader_layout-check'
@@ -67,13 +69,5 @@ let g:ale_yaml_yamllint_options='-d "{extends: relaxed, rules: {line-length: dis
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 map <C-l> :IndentGuidesToggle<CR>
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=8
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=17
-
-" Setting filetypes
-" Set the type for the file type and override if file type
-" already has detected
-au BufRead,BufNewFile *.pp set filetype=puppet
-" Set the type for the file type but do NOT override if file type
-" already has detected
-" au BufRead,BufNewFile *.html.twig setfiletype=html
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=17
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=18

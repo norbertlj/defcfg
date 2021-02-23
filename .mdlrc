@@ -1,0 +1,8 @@
+# list of rules https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md
+# rules beginning with ~ are disabled
+#
+# MD004 - Unordered list style
+# MD013 - Line length
+# MD029 - Ordered list item prefix
+# MD024 - Multiple headers with the same content - disabled until documentation generation is fully automated and reference files are moved out of readmes
+rules "~MD004,~MD013,~MD029,~MD024"
