@@ -1,9 +1,12 @@
-set nobackup " vim nie bedzie zostawial kopii zapisywanych plikow
-set nowritebackup " ani tworzyl ich podczas edycji
+" Automatically download plugins
+source $HOME/.vim/config/plugins.vim
 
-set nolinebreak " brak autowstawiania enterow
-set nowrap " brak zawijania wierszy
-"set wrap " zawijanie wierszy
+set nobackup " Vim won't create backup files
+set nowritebackup " and won't make them during writing
+
+set nolinebreak " no autoinserting line break
+set nowrap " no wrapping lines
+"set wrap " wrapping lines
 
 " spaces instead of tab
 set expandtab
@@ -19,9 +22,9 @@ set autoindent
 set smartindent
 
 " Set relative number and assign it to ctrl + m for toggle
-"set relativenumber
+set relativenumber
 "set nu
-"map <C-m> :set nu!<CR>
+map <C-m> :set nu!<CR>
 
 "Needed for a lot of cool stuff and plugins
 set nocompatible
@@ -30,7 +33,7 @@ set nocompatible
 filetype plugin on
 
 " Pathogen and Vundle is not needed in vim 8
-execute pathogen#infect()
+" execute pathogen#infect()
 syntax on
 
 "Set interactive search
@@ -53,10 +56,10 @@ let g:vimwiki_hl_cb_checked = 1
 "let g:vimwiki_url_maxsave=0
 
 " Loads specific color scheme for vimdiff
-colorscheme ron
-if &diff
-  colorscheme diffcolors
-endif
+" colorscheme ron
+" if &diff
+"   colorscheme diffcolors
+" endif
 
 "set shellcmdflag=-lc
 

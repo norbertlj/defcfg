@@ -1,2 +1,4 @@
-alias maven305='export PATH=`/mnt/c/my/programs/linux/maven305.sh` ; export MAVEN_HOME=/mnt/c/my/installs/maven/apache-maven-3.0.5/'
-alias java18='export PATH=`/mnt/c/my/programs/linux/java18.sh`; export JAVA_HOME=/mnt/c/my/programs/linux/java1.8/'
+alias maven361='export PATH=`/mnt/d/programs/linux/maven361.sh` ; export MAVEN_HOME=/mnt/d/programs/linux/maven/apache-maven-3.6.1/'
+alias java18='export PATH=`/mnt/d/programs/linux/java18.sh`; export JAVA_HOME=/mnt/d/programs/linux/java1.8/'
+# alias svn='export OPENSSL_CONF=/home/njakubiak/openssl.conf ; svn'
+alias vim='nvim'

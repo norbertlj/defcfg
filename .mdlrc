@@ -5,4 +5,5 @@
 # MD013 - Line length
 # MD029 - Ordered list item prefix
 # MD024 - Multiple headers with the same content - disabled until documentation generation is fully automated and reference files are moved out of readmes
-rules "~MD013"
+rules "~MD013,~MD029"
+style "/home/njakubiak/.mdlrc.style.rb"
